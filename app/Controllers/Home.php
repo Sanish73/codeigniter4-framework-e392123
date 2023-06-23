@@ -8,7 +8,6 @@ class Home extends BaseController
 {
     public function index()
     {
-        // $servicesModel = new ServicesModel();
         $servicesModel = new ServicesModel();
         $data['data'] = $servicesModel->findAll();
         
@@ -32,5 +31,9 @@ class Home extends BaseController
         return redirect()->to(base_url('/'));
     }
 
+    function pakageList(){
+       
+        return view('packagePage');
+    }
 
 }

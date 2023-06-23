@@ -29,7 +29,7 @@ $routes->set404Override();
 
 // We get a performance increase by specifying the default
 // route since we don't have to scan directories.
-$routes->get('/', 'Home::index');
+
 
 /*
  * --------------------------------------------------------------------
@@ -48,7 +48,10 @@ if (is_file(APPPATH . 'Config/' . ENVIRONMENT . '/Routes.php')) {
     require APPPATH . 'Config/' . ENVIRONMENT . '/Routes.php';
 }
 
-
+$routes->get('/', 'Home::index');
 $routes->post('/submit-service-form', 'Home::postServices');
+
+
+$routes->get('/package-submit-form', 'Home::pakageList');
 
 

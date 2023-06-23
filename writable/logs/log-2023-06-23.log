@@ -1,0 +1,107 @@
+CRITICAL - 2023-06-23 03:40:37 --> Undefined variable $data
+in APPPATH\Views\packagePage.php on line 22.
+ 1 APPPATH\Views\packagePage.php(22): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $data', 'C:\\xamp1\\htdocs\\codeigniter4-framework-e392123\\app\\Views\\packagePage.php', 22)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xamp1\\htdocs\\codeigniter4-framework-e392123\\app\\Views\\packagePage.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('packagePage', [], true)
+ 5 APPPATH\Controllers\Home.php(36): view('packagePage')
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Home->pakageList()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-23 03:43:18 --> Undefined variable $data
+in APPPATH\Views\packagePage.php on line 79.
+ 1 APPPATH\Views\packagePage.php(79): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $data', 'C:\\xamp1\\htdocs\\codeigniter4-framework-e392123\\app\\Views\\packagePage.php', 79)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xamp1\\htdocs\\codeigniter4-framework-e392123\\app\\Views\\packagePage.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('packagePage', [], true)
+ 5 APPPATH\Controllers\Home.php(36): view('packagePage')
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Home->pakageList()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-23 03:44:19 --> Undefined variable $data
+in APPPATH\Views\packagePage.php on line 78.
+ 1 APPPATH\Views\packagePage.php(78): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $data', 'C:\\xamp1\\htdocs\\codeigniter4-framework-e392123\\app\\Views\\packagePage.php', 78)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xamp1\\htdocs\\codeigniter4-framework-e392123\\app\\Views\\packagePage.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('packagePage', [], true)
+ 5 APPPATH\Controllers\Home.php(36): view('packagePage')
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Home->pakageList()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-23 03:44:22 --> Undefined variable $data
+in APPPATH\Views\packagePage.php on line 78.
+ 1 APPPATH\Views\packagePage.php(78): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $data', 'C:\\xamp1\\htdocs\\codeigniter4-framework-e392123\\app\\Views\\packagePage.php', 78)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xamp1\\htdocs\\codeigniter4-framework-e392123\\app\\Views\\packagePage.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('packagePage', [], true)
+ 5 APPPATH\Controllers\Home.php(36): view('packagePage')
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Home->pakageList()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-23 06:03:51 --> The framework needs the following extension(s) installed and loaded: intl, mbstring.
+in SYSTEMPATH\CodeIgniter.php on line 226.
+ 1 SYSTEMPATH\CodeIgniter.php(226): CodeIgniter\Exceptions\FrameworkException::forMissingExtension()
+ 2 SYSTEMPATH\CodeIgniter.php(190): CodeIgniter\CodeIgniter->resolvePlatformExtensions()
+ 3 ROOTPATH\spark(83): CodeIgniter\CodeIgniter->initialize()
+CRITICAL - 2023-06-23 06:03:51 --> Uncaught Error: Call to undefined function CodeIgniter\CLI\mb_strpos() in C:\xamp1\htdocs\codeigniter4-framework-e392123\system\CLI\CLI.php:872
+Stack trace:
+#0 C:\xamp1\htdocs\codeigniter4-framework-e392123\system\CLI\CLI.php(161): CodeIgniter\CLI\CLI::parseCommandLine()
+#1 C:\xamp1\htdocs\codeigniter4-framework-e392123\system\CLI\CLI.php(1115): CodeIgniter\CLI\CLI::init()
+#2 C:\xamp1\htdocs\codeigniter4-framework-e392123\system\Autoloader\Autoloader.php(312): include_once('...')
+#3 C:\xamp1\htdocs\codeigniter4-framework-e392123\system\Autoloader\Autoloader.php(289): CodeIgniter\Autoloader\Autoloader->includeFile()
+#4 C:\xamp1\htdocs\codeigniter4-framework-e392123\system\Autoloader\Autoloader.php(267): CodeIgniter\Autoloader\Autoloader->loadInNamespace()
+#5 C:\xamp1\htdocs\codeigniter4-framework-e392123\app\Views\errors\cli\error_exception.php(6): CodeIgniter\Autoloader\Autoloader->loadClass()
+#6 C:\xamp1\htdocs\codeigniter4-framework-e392123\app\Views\errors\cli\production.php(5): include('...')
+#7 C:\xamp1\htdocs\codeigniter4-framework-e392123\system\Debug\Exceptions.php(282): include('...')
+#8 C:\xamp1\htdocs\codeigniter4-framework-e392123\system\Debug\Exceptions.php(285): CodeIgniter\Debug\Exceptions->CodeIgniter\Debug\{closure}()
+#9 C:\xamp1\htdocs\codeigniter4-framework-e392123\system\Debug\Exceptions.php(156): CodeIgniter\Debug\Exceptions->render()
+#10 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler()
+#11 {main}
+  thrown
+【Previous Exception】
+CodeIgniter\Exceptions\FrameworkException
+The framework needs the following extension(s) installed and loaded: intl, mbstring.
+#0 C:\xamp1\htdocs\codeigniter4-framework-e392123\system\CodeIgniter.php(226): CodeIgniter\Exceptions\FrameworkException::forMissingExtension()
+#1 C:\xamp1\htdocs\codeigniter4-framework-e392123\system\CodeIgniter.php(190): CodeIgniter\CodeIgniter->resolvePlatformExtensions()
+#2 C:\xamp1\htdocs\codeigniter4-framework-e392123\spark(83): CodeIgniter\CodeIgniter->initialize()
+#3 {main}
+in SYSTEMPATH\CLI\CLI.php on line 872.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2023-06-23 06:14:59 --> The framework needs the following extension(s) installed and loaded: intl, mbstring.
+in SYSTEMPATH\CodeIgniter.php on line 226.
+ 1 SYSTEMPATH\CodeIgniter.php(226): CodeIgniter\Exceptions\FrameworkException::forMissingExtension()
+ 2 SYSTEMPATH\CodeIgniter.php(190): CodeIgniter\CodeIgniter->resolvePlatformExtensions()
+ 3 ROOTPATH\spark(83): CodeIgniter\CodeIgniter->initialize()
+CRITICAL - 2023-06-23 06:14:59 --> Uncaught Error: Call to undefined function CodeIgniter\CLI\mb_strpos() in C:\xamp1\htdocs\codeigniter4-framework-e392123\system\CLI\CLI.php:872
+Stack trace:
+#0 C:\xamp1\htdocs\codeigniter4-framework-e392123\system\CLI\CLI.php(161): CodeIgniter\CLI\CLI::parseCommandLine()
+#1 C:\xamp1\htdocs\codeigniter4-framework-e392123\system\CLI\CLI.php(1115): CodeIgniter\CLI\CLI::init()
+#2 C:\xamp1\htdocs\codeigniter4-framework-e392123\system\Autoloader\Autoloader.php(312): include_once('...')
+#3 C:\xamp1\htdocs\codeigniter4-framework-e392123\system\Autoloader\Autoloader.php(289): CodeIgniter\Autoloader\Autoloader->includeFile()
+#4 C:\xamp1\htdocs\codeigniter4-framework-e392123\system\Autoloader\Autoloader.php(267): CodeIgniter\Autoloader\Autoloader->loadInNamespace()
+#5 C:\xamp1\htdocs\codeigniter4-framework-e392123\app\Views\errors\cli\error_exception.php(6): CodeIgniter\Autoloader\Autoloader->loadClass()
+#6 C:\xamp1\htdocs\codeigniter4-framework-e392123\app\Views\errors\cli\production.php(5): include('...')
+#7 C:\xamp1\htdocs\codeigniter4-framework-e392123\system\Debug\Exceptions.php(282): include('...')
+#8 C:\xamp1\htdocs\codeigniter4-framework-e392123\system\Debug\Exceptions.php(285): CodeIgniter\Debug\Exceptions->CodeIgniter\Debug\{closure}()
+#9 C:\xamp1\htdocs\codeigniter4-framework-e392123\system\Debug\Exceptions.php(156): CodeIgniter\Debug\Exceptions->render()
+#10 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler()
+#11 {main}
+  thrown
+【Previous Exception】
+CodeIgniter\Exceptions\FrameworkException
+The framework needs the following extension(s) installed and loaded: intl, mbstring.
+#0 C:\xamp1\htdocs\codeigniter4-framework-e392123\system\CodeIgniter.php(226): CodeIgniter\Exceptions\FrameworkException::forMissingExtension()
+#1 C:\xamp1\htdocs\codeigniter4-framework-e392123\system\CodeIgniter.php(190): CodeIgniter\CodeIgniter->resolvePlatformExtensions()
+#2 C:\xamp1\htdocs\codeigniter4-framework-e392123\spark(83): CodeIgniter\CodeIgniter->initialize()
+#3 {main}
+in SYSTEMPATH\CLI\CLI.php on line 872.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2023-06-23 06:27:56 --> The framework needs the following extension(s) installed and loaded: intl.
+in SYSTEMPATH\CodeIgniter.php on line 226.
+ 1 SYSTEMPATH\CodeIgniter.php(226): CodeIgniter\Exceptions\FrameworkException::forMissingExtension()
+ 2 SYSTEMPATH\CodeIgniter.php(190): CodeIgniter\CodeIgniter->resolvePlatformExtensions()
+ 3 ROOTPATH\spark(83): CodeIgniter\CodeIgniter->initialize()
