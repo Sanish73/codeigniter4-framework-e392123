@@ -2,6 +2,7 @@
 
 namespace App\Controllers;
 
+use App\Models\PackagesModel;
 use App\Models\ServicesModel;
 
 class Home extends BaseController
@@ -35,5 +36,27 @@ class Home extends BaseController
        
         return view('packagePage');
     }
+
+    function postPackages()
+{
+    $packageModel = new PackageModel();
+    
+    $data = [
+        'service_id' => $this->request->getGet('id'), // Retrieve service_id from URL parameter
+        'name' => $this->request->getPost('packageName'),
+        'price' => $this->request->getPost('packagePrice'),
+        'description' => $this->request->getPost('packageDescription'),
+        'created_by' => 1, // Set created_by value (replace with appropriate value)
+        'created_at' => date('Y-m-d H:i:s'), // Set created_at value to current timestamp
+        'updated_by' => 0, // Set updated_by value to 0 initially
+        'updated_at' => date('Y-m-d H:i:s'), // Set updated_at value to current timestamp
+    ];
+    
+    $packageModel->insert($data); // Insert the record
+    
+    // ... rest of your code
+}
+
+    
 
 }

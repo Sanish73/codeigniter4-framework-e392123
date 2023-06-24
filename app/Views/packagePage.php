@@ -33,22 +33,33 @@
                         </div>
 
                         <div class="modal-body">
-                            <form method="post" id="packageform">
+                            <form
+                                method="post"
+                                action="<?=site_url('submit-package-form')?>"
+                                id="packageform">
                                 <div class="form-group">
-                                    <label for="serviceName">Name</label>
+                                    <label for="packageName">Name</label>
                                     <input
                                         type="text"
                                         class="form-control"
-                                        id="serviceName"
-                                        name="serviceName"
+                                        id="packageName"
+                                        name="packageName"
                                         required>
                                 </div>
                                 <div class="form-group">
-                                    <label for="serviceDescription">Price</label>
+                                    <label for="packagePrice">Price</label>
                                     <textarea
                                         class="form-control"
-                                        id="serviceContact"
-                                        name="serviceContact"
+                                        id="packageContact"
+                                        name="packageContact"
+                                        required></textarea>
+                                </div>
+                                <div class="form-group">
+                                    <label for="packageDescription">Package Description</label>
+                                    <textarea
+                                        class="form-control"
+                                        id="packageDescription"
+                                        name="packageDescription"
                                         required></textarea>
                                 </div>
 
@@ -68,6 +79,7 @@
                             <th scope="col">#</th>
                             <th scope="col">Name</th>
                             <th scope="col">Price</th>
+                            <th scope="col">Description</th>
 
                         </tr>
                     </thead>
@@ -85,8 +97,3 @@
     </body>
 </html>
 
-<!-- <script>
-    function submitPackageForm() {
-        window.location.href = "<?=site_url('package-submit-form')?>";
-    }
-</script> -->

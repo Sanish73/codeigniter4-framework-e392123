@@ -52,6 +52,8 @@ $routes->get('/', 'Home::index');
 $routes->post('/submit-service-form', 'Home::postServices');
 
 
-$routes->get('/package-submit-form', 'Home::pakageList');
+$routes->get('/add-package', 'Home::pakageList');
+$routes->post('/submit-package-form', 'Home::postPackages');
+
 
 

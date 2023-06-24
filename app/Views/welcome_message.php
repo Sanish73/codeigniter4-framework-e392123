@@ -119,7 +119,9 @@
                                     <?php echo $row['description']; ?>
                                 </td>
                                 <td>
-                                    <button type="button" class="btn btn-primary float-right">ADD Packages</button>
+                                    <a href="<?=site_url('add-package?id=' . $row['id'])?>" class="btn btn-primary btn-sm">ADD Packages</a>
+
+
                                 </td>
                             </tr>
                             <?php endforeach;?>
@@ -128,12 +130,7 @@
                 </div>
             </div>
 
-            <!-- <div class="col-md-2">
-                <button
-                    type="button"
-                    
-                    onclick="submitPackageForm()">Add Pakages</button>
-            </div> -->
+
         </div>
         <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
         <script
@@ -142,10 +139,5 @@
             src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
 
     </body>
-</html>
 
-<script>
-    function submitPackageForm() {
-        window.location.href = "<?=site_url('package-submit-form')?>";
-    }
-</script>
+</html>
