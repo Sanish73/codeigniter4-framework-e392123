@@ -56,7 +56,7 @@ class Home extends BaseController
         // $packageModel->insert($data); // Insert the record
         // return redirect()->to(base_url('/'));
 
-        // ... rest of your code
+        
     }
 
 }
