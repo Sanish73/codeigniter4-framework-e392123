@@ -11,11 +11,11 @@ class Home extends BaseController
     {
         $servicesModel = new ServicesModel();
         $data['data'] = $servicesModel->findAll();
-        
-        return view('welcome_message' , $data);
+
+        return view('welcome_message', $data);
     }
 
-    function postServices()
+    public function postServices()
     {
         $servicesModel = new ServicesModel();
         $data = [
@@ -32,31 +32,31 @@ class Home extends BaseController
         return redirect()->to(base_url('/'));
     }
 
-    function pakageList(){
-       
+    public function pakageList()
+    {
+
         return view('packagePage');
     }
 
-    function postPackages()
-{
-    $packageModel = new PackageModel();
-    
-    $data = [
-        'service_id' => $this->request->getGet('id'), // Retrieve service_id from URL parameter
-        'name' => $this->request->getPost('packageName'),
-        'price' => $this->request->getPost('packagePrice'),
-        'description' => $this->request->getPost('packageDescription'),
-        'created_by' => 1, // Set created_by value (replace with appropriate value)
-        'created_at' => date('Y-m-d H:i:s'), // Set created_at value to current timestamp
-        'updated_by' => 0, // Set updated_by value to 0 initially
-        'updated_at' => date('Y-m-d H:i:s'), // Set updated_at value to current timestamp
-    ];
-    
-    $packageModel->insert($data); // Insert the record
-    
-    // ... rest of your code
-}
+    public function postPackages()
+    {
+        $packageModel = new PackagesModel();
+        $pack = $this->request->getPost('packageName');
+        echo $pack;
 
-    
+        // $data = [
+        //     'service_id' => $this->request->getPost('service_id'),
+        //     'name' => $this->request->getPost('packageName'),
+        //     'price' => $this->request->getPost('packagePrice'),
+        //     'description' => $this->request->getPost('packageDescription'),
+        //     'created_by' => $this->request->getPost('service_id'),
+        //     'updated_by' => $this->request->getPost('service_id'),
+        // ];
+
+        // $packageModel->insert($data); // Insert the record
+        // return redirect()->to(base_url('/'));
+
+        // ... rest of your code
+    }
 
 }

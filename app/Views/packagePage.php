@@ -37,6 +37,7 @@
                                 method="post"
                                 action="<?=site_url('submit-package-form')?>"
                                 id="packageform">
+
                                 <div class="form-group">
                                     <label for="packageName">Name</label>
                                     <input
@@ -46,13 +47,15 @@
                                         name="packageName"
                                         required>
                                 </div>
+                               
                                 <div class="form-group">
                                     <label for="packagePrice">Price</label>
-                                    <textarea
+                                    <input
+                                        type="text"
                                         class="form-control"
-                                        id="packageContact"
-                                        name="packageContact"
-                                        required></textarea>
+                                        id="packagePrice"
+                                        name="packagePrice"
+                                        required>
                                 </div>
                                 <div class="form-group">
                                     <label for="packageDescription">Package Description</label>
@@ -62,6 +65,8 @@
                                         name="packageDescription"
                                         required></textarea>
                                 </div>
+
+                                <input type="hidden" name="service_id" value="<?= $_GET['id'] ?>">
 
                                 <button type="submit" class="btn btn-primary">Submit</button>
                             </form>
@@ -96,4 +101,3 @@
 
     </body>
 </html>
-
