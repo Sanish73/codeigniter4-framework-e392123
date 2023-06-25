@@ -34,15 +34,21 @@ class Home extends BaseController
 
     public function pakageList($id)
     {
+        $x = new PackagesModel();
+        $data['data'] = $x->findAll();
+
+       
+
         return view('packagePage',[
-            'id' => $id
+            'id' => $id,
+            'data' =>$data
         ]);
     }
 
     public function postPackages()
     {
         $x = new PackagesModel();
-        // $pack = $this->request->getPost('packageName');
+        $pack = $this->request->getPost('service_id');
         // echo $pack;
 
         $data = [
@@ -56,9 +62,13 @@ class Home extends BaseController
 
         print_r($data);
         $x->insert($data);
-        // return redirect()->to(base_url('/'));
+        return redirect()->to(base_url('/add-package/' . $pack));
 
-        
+    }
+
+    public function indexPackage()
+    {
+     
     }
 
 }

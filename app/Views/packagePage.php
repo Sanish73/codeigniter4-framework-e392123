@@ -1,4 +1,3 @@
-<?=$id ?>
 <!DOCTYPE html>
 <html>
     <head>
@@ -48,7 +47,7 @@
                                         name="packageName"
                                         required>
                                 </div>
-                               
+
                                 <div class="form-group">
                                     <label for="packagePrice">Price</label>
                                     <input
@@ -89,7 +88,22 @@
 
                         </tr>
                     </thead>
-                    <tbody></tbody>
+                    <tbody>
+                             <?php $counter = 1; ?>
+                        <?php foreach ($data['data'] as $item): ?>
+                         <tr>
+                            <th scope="row"><?php echo $counter; ?></th>
+
+                            <td class="name-column"><?php echo $item['name'] ?>
+                            <td class="name-column"><?php echo $item['price'] ?>
+                            <td class="name-column"><?php echo $item['description'] ?>
+                            
+                        </tr>
+                          
+                            <?php $counter++; ?>
+                        <?php endforeach;?>
+
+                    </tbody>
                 </table>
 
             </div>
