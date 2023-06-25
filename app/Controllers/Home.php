@@ -32,28 +32,30 @@ class Home extends BaseController
         return redirect()->to(base_url('/'));
     }
 
-    public function pakageList()
+    public function pakageList($id)
     {
-
-        return view('packagePage');
+        return view('packagePage',[
+            'id' => $id
+        ]);
     }
 
     public function postPackages()
     {
-        $packageModel = new PackagesModel();
-        $pack = $this->request->getPost('packageName');
-        echo $pack;
+        $x = new PackagesModel();
+        // $pack = $this->request->getPost('packageName');
+        // echo $pack;
 
-        // $data = [
-        //     'service_id' => $this->request->getPost('service_id'),
-        //     'name' => $this->request->getPost('packageName'),
-        //     'price' => $this->request->getPost('packagePrice'),
-        //     'description' => $this->request->getPost('packageDescription'),
-        //     'created_by' => $this->request->getPost('service_id'),
-        //     'updated_by' => $this->request->getPost('service_id'),
-        // ];
+        $data = [
+            'service_id' => $this->request->getPost('service_id'),
+            'name' => $this->request->getPost('packageName'),
+            'price' => $this->request->getPost('packagePrice'),
+            'description' => $this->request->getPost('packageDescription'),
+            'created_by' => 1,
+            'updated_by' => 1,
+        ];
 
-        // $packageModel->insert($data); // Insert the record
+        print_r($data);
+        $x->insert($data);
         // return redirect()->to(base_url('/'));
 
         

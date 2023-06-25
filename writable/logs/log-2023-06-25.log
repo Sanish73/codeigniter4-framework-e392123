@@ -1,0 +1,151 @@
+CRITICAL - 2023-06-25 03:04:37 --> Undefined variable $packageModel
+in APPPATH\Controllers\Home.php on line 56.
+ 1 APPPATH\Controllers\Home.php(56): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $packageModel', 'C:\\xamp1\\htdocs\\codeigniter4-framework-e392123\\app\\Controllers\\Home.php', 56)
+ 2 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Home->postPackages()
+ 3 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-25 03:09:34 --> Undefined array key "id"
+in APPPATH\Views\packagePage.php on line 72.
+ 1 APPPATH\Views\packagePage.php(72): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "id"', 'C:\\xamp1\\htdocs\\codeigniter4-framework-e392123\\app\\Views\\packagePage.php', 72)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xamp1\\htdocs\\codeigniter4-framework-e392123\\app\\Views\\packagePage.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('packagePage', [], true)
+ 5 APPPATH\Controllers\Home.php(37): view('packagePage', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Home->pakageList('17')
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-25 03:10:08 --> Undefined variable $id
+in APPPATH\Views\packagePage.php on line 1.
+ 1 APPPATH\Views\packagePage.php(1): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $id', 'C:\\xamp1\\htdocs\\codeigniter4-framework-e392123\\app\\Views\\packagePage.php', 1)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xamp1\\htdocs\\codeigniter4-framework-e392123\\app\\Views\\packagePage.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('packagePage', [], true)
+ 5 APPPATH\Controllers\Home.php(37): view('packagePage')
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Home->pakageList('17')
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-25 03:10:41 --> Undefined variable $id
+in APPPATH\Views\packagePage.php on line 1.
+ 1 APPPATH\Views\packagePage.php(1): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $id', 'C:\\xamp1\\htdocs\\codeigniter4-framework-e392123\\app\\Views\\packagePage.php', 1)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xamp1\\htdocs\\codeigniter4-framework-e392123\\app\\Views\\packagePage.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('packagePage', [], true)
+ 5 APPPATH\Controllers\Home.php(37): view('packagePage')
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Home->pakageList('17')
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-25 03:10:49 --> Undefined variable $id
+in APPPATH\Views\packagePage.php on line 21.
+ 1 APPPATH\Views\packagePage.php(21): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $id', 'C:\\xamp1\\htdocs\\codeigniter4-framework-e392123\\app\\Views\\packagePage.php', 21)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xamp1\\htdocs\\codeigniter4-framework-e392123\\app\\Views\\packagePage.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('packagePage', [], true)
+ 5 APPPATH\Controllers\Home.php(37): view('packagePage')
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Home->pakageList('17')
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-25 03:10:54 --> Undefined array key "id"
+in APPPATH\Views\packagePage.php on line 72.
+ 1 APPPATH\Views\packagePage.php(72): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "id"', 'C:\\xamp1\\htdocs\\codeigniter4-framework-e392123\\app\\Views\\packagePage.php', 72)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xamp1\\htdocs\\codeigniter4-framework-e392123\\app\\Views\\packagePage.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('packagePage', [], true)
+ 5 APPPATH\Controllers\Home.php(37): view('packagePage')
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Home->pakageList('17')
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-25 03:12:14 --> Undefined array key "id"
+in APPPATH\Views\packagePage.php on line 72.
+ 1 APPPATH\Views\packagePage.php(72): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "id"', 'C:\\xamp1\\htdocs\\codeigniter4-framework-e392123\\app\\Views\\packagePage.php', 72)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xamp1\\htdocs\\codeigniter4-framework-e392123\\app\\Views\\packagePage.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('packagePage', [], true)
+ 5 APPPATH\Controllers\Home.php(37): view('packagePage')
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Home->pakageList('17')
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-25 03:12:42 --> Undefined variable $id
+in APPPATH\Views\packagePage.php on line 21.
+ 1 APPPATH\Views\packagePage.php(21): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $id', 'C:\\xamp1\\htdocs\\codeigniter4-framework-e392123\\app\\Views\\packagePage.php', 21)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xamp1\\htdocs\\codeigniter4-framework-e392123\\app\\Views\\packagePage.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('packagePage', [], true)
+ 5 APPPATH\Controllers\Home.php(37): view('packagePage')
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Home->pakageList('17')
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-25 03:13:55 --> Undefined variable $id
+in APPPATH\Views\packagePage.php on line 1.
+ 1 APPPATH\Views\packagePage.php(1): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $id', 'C:\\xamp1\\htdocs\\codeigniter4-framework-e392123\\app\\Views\\packagePage.php', 1)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xamp1\\htdocs\\codeigniter4-framework-e392123\\app\\Views\\packagePage.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('packagePage', [], true)
+ 5 APPPATH\Controllers\Home.php(37): view('packagePage')
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Home->pakageList('17')
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-25 03:13:56 --> Undefined variable $id
+in APPPATH\Views\packagePage.php on line 1.
+ 1 APPPATH\Views\packagePage.php(1): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $id', 'C:\\xamp1\\htdocs\\codeigniter4-framework-e392123\\app\\Views\\packagePage.php', 1)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xamp1\\htdocs\\codeigniter4-framework-e392123\\app\\Views\\packagePage.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('packagePage', [], true)
+ 5 APPPATH\Controllers\Home.php(37): view('packagePage')
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Home->pakageList('17')
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-25 04:10:01 --> syntax error, unexpected variable "$data"
+in APPPATH\Controllers\Home.php on line 57.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(289): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xamp1\\htdocs\\codeigniter4-framework-e392123\\app\\Controllers\\Home.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(267): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\Home')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\Home')
+ 4 SYSTEMPATH\CodeIgniter.php(890): class_exists('\\App\\Controllers\\Home', true)
+ 5 SYSTEMPATH\CodeIgniter.php(484): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-25 04:10:04 --> syntax error, unexpected variable "$data"
+in APPPATH\Controllers\Home.php on line 57.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(289): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xamp1\\htdocs\\codeigniter4-framework-e392123\\app\\Controllers\\Home.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(267): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\Home')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\Home')
+ 4 SYSTEMPATH\CodeIgniter.php(890): class_exists('\\App\\Controllers\\Home', true)
+ 5 SYSTEMPATH\CodeIgniter.php(484): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-25 04:12:28 --> Undefined variable $packageModel
+in APPPATH\Controllers\Home.php on line 58.
+ 1 APPPATH\Controllers\Home.php(58): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $packageModel', 'C:\\xamp1\\htdocs\\codeigniter4-framework-e392123\\app\\Controllers\\Home.php', 58)
+ 2 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Home->postPackages()
+ 3 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-25 04:12:47 --> Allowed fields must be specified for model: "App\Models\PackagesModel"
+in SYSTEMPATH\BaseModel.php on line 1242.
+ 1 SYSTEMPATH\BaseModel.php(1242): CodeIgniter\Database\Exceptions\DataException::forInvalidAllowedFields('App\\Models\\PackagesModel')
+ 2 SYSTEMPATH\BaseModel.php(757): CodeIgniter\BaseModel->doProtectFields([...])
+ 3 SYSTEMPATH\Model.php(730): CodeIgniter\BaseModel->insert([...], true)
+ 4 APPPATH\Controllers\Home.php(58): CodeIgniter\Model->insert([...])
+ 5 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Home->postPackages()
+ 6 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 7 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-25 04:20:27 --> Allowed fields must be specified for model: "App\Models\PackagesModel"
+in SYSTEMPATH\BaseModel.php on line 1242.
+ 1 SYSTEMPATH\BaseModel.php(1242): CodeIgniter\Database\Exceptions\DataException::forInvalidAllowedFields('App\\Models\\PackagesModel')
+ 2 SYSTEMPATH\BaseModel.php(757): CodeIgniter\BaseModel->doProtectFields([...])
+ 3 SYSTEMPATH\Model.php(730): CodeIgniter\BaseModel->insert([...], true)
+ 4 APPPATH\Controllers\Home.php(58): CodeIgniter\Model->insert([...])
+ 5 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Home->postPackages()
+ 6 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 7 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()

@@ -119,7 +119,7 @@
                                     <?php echo $row['description']; ?>
                                 </td>
                                 <td>
-                                    <a href="<?=site_url('add-package?id=' . $row['id'])?>" class="btn btn-primary btn-sm">ADD Packages</a>
+                                    <a href="<?=site_url('add-package/' . $row['id'])?>" class="btn btn-primary btn-sm">ADD Packages</a>
 
 
                                 </td>

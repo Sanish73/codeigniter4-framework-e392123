@@ -1,3 +1,4 @@
+<?=$id ?>
 <!DOCTYPE html>
 <html>
     <head>
@@ -66,7 +67,7 @@
                                         required></textarea>
                                 </div>
 
-                                <input type="hidden" name="service_id" value="<?= $_GET['id'] ?>">
+                                <input type="hidden" name="service_id" value="<?php echo $id; ?>">
 
                                 <button type="submit" class="btn btn-primary">Submit</button>
                             </form>
