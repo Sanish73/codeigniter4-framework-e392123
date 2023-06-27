@@ -51,11 +51,12 @@ if (is_file(APPPATH . 'Config/' . ENVIRONMENT . '/Routes.php')) {
 $routes->get('/', 'Home::index');
 $routes->post('/submit-service-form', 'Home::postServices');
 $routes->get('/delete-services/(:num)', 'Home::deleteServices/$1');
+$routes->post('/update-services/(:num)', 'Home::updateService/$1');
 
 
 
 $routes->get('/add-package/(:num)', 'Home::pakageList/$1');
 $routes->post('/submit-package-form', 'Home::postPackages');
-
+$routes->get('/delete-package/(:num)', 'Home::deletePackages/$1');
 
 

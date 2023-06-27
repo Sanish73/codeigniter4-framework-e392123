@@ -35,4 +35,11 @@ class ServicesModel extends Model
     return $query->getResultArray();
     }
 
+    public function updateService($id, $data)
+    {
+        $this->db->table('services')
+        ->where('id', $id)
+        ->update($data);
+    }
+
 }

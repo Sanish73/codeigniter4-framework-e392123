@@ -8,11 +8,6 @@ use App\Models\ServicesModel;
 
 class Home extends BaseController
 {
-
-   
-    
-
-
     public function index()
     {
         $servicesModel = new ServicesModel();
@@ -54,10 +49,9 @@ class Home extends BaseController
 
     public function postPackages()
     {
-        $x = new PackagesModel();
+        $packageModel = new PackagesModel();
         $pack = $this->request->getPost('service_id');
-        // echo $pack;
-
+       
         $data = [
             'service_id' => $this->request->getPost('service_id'),
             'name' => $this->request->getPost('packageName'),
@@ -67,17 +61,44 @@ class Home extends BaseController
             'updated_by' => 1,
         ];
 
-        print_r($data);
-        $x->insert($data);
+        // print_r($data);
+        $packageModel->insert($data);
         return redirect()->to(base_url('/add-package/' . $pack));
-
     }
+
     public function deleteServices($id)
     {       
-    $servicesModel = new ServicesModel();
-    $servicesModel->deleteService($id);
-   
-    return redirect()->to(base_url('/'));
+        $servicesModel = new ServicesModel();
+        $servicesModel->deleteService($id);
+    
+        return redirect()->to(base_url('/'));
     }
 
+    public function updateService($id)
+    {       
+        $servicesModel = new ServicesModel();
+      
+        $data = [            
+            'name' => $this->request->getPost('serviceName'),
+            'location' => $this->request->getPost('serviceLocation'),
+            'contact' => $this->request->getPost('serviceContact'),
+            'description' => $this->request->getPost('serviceDescription'),
+        ];
+        $servicesModel->updateService($id, $data);   
+    
+        return redirect()->to(base_url('/'));
+    }
+
+    public function deletePackages($id)
+    {       
+        $packageModel = new PackagesModel();
+        $pack = $this->request->getGet('service_id');
+        
+        $packageModel->deletePackage($id);
+    
+        return redirect()->to(base_url('/add-package/' . $pack));
+    }
+
+
+    
 }

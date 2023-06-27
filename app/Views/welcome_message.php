@@ -25,7 +25,7 @@
                 class="btn btn-primary"
                 data-toggle="modal"
                 data-target="#serviceModal">
-                Service
+               Add Service
             </button>
 
             <div
@@ -118,7 +118,7 @@
             <td class="multiline-description" style="word-wrap: break-word;">
                 <?php echo $row['description']; ?>
             </td>
-            <td>
+                <td>
                 <div class="dropdown">
                     <button class="btn btn-primary btn-sm dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                         Options
@@ -126,6 +126,7 @@
                     <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
                         <a class="dropdown-item" href="<?=site_url('add-package/' . $row['id'])?>">Add Package</a>
                         <a class="dropdown-item" href="#" data-toggle="modal" data-target="#confirmDeleteModal_<?php echo $row['id']; ?>">Delete Package</a>
+                        <a class="dropdown-item" href="#" data-toggle="modal" data-target="#editServiceModal_<?php echo $row['id']; ?>">Edit Service</a>
                     </div>
                 </div>
             </td>
@@ -152,6 +153,43 @@
             </div>
         </div>
         <!-- End Delete Package Confirmation Modal -->
+
+        <!--Edit Pacage -->
+    <div class="modal fade" id="editServiceModal_<?php echo $row['id']; ?>" tabindex="-1" role="dialog" aria-labelledby="editServiceModalLabel_<?php echo $row['id']; ?>" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="editServiceModalLabel_<?php echo $row['id']; ?>">Edit Package</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <form method="post" action="<?=site_url('update-services/' . $row['id'])?>">
+                    <div class="form-group">
+                        <label for="serviceName_<?php echo $row['id']; ?>">Name</label>
+                        <input type="text" class="form-control" id="serviceName_<?php echo $row['id']; ?>" name="serviceName" value="<?php echo $row['name']; ?>" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="serviceContact_<?php echo $row['id']; ?>">Contact</label>
+                        <input type="text" class="form-control" id="servicePrice_<?php echo $row['id']; ?>" name="serviceContact" value="<?php echo $row['contact']; ?>" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="serviceLocation_<?php echo $row['id']; ?>">Location</label>
+                        <input type="text" class="form-control" id="serviceLocation_<?php echo $row['id']; ?>" name="serviceLocation" value="<?php echo $row['location']; ?>" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="serviceDescription_<?php echo $row['id']; ?>">Description</label>
+                        <textarea class="form-control" id="serviceDescription_<?php echo $row['id']; ?>" name="serviceDescription" required><?php echo $row['description']; ?></textarea>
+                    </div>                   
+                    <button type="submit" class="btn btn-primary">Update</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+            
 
         <?php endforeach;?>
     </tbody>

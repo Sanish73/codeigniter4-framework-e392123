@@ -79,27 +79,60 @@
             <div class="container">
 
                <table class="table">
-    <thead>
-        <tr>
-            <th scope="col">#</th>
-            <th scope="col">Name</th>
-            <th scope="col">Price</th>
-            <th scope="col">Description</th>
-        </tr>
-    </thead>
-    <tbody>
-        <?php $counter = 1; ?>
-        <?php foreach ($packages as $package): ?>
-            <tr>
-                <th scope="row"><?php echo $counter; ?></th>
-                <td class="name-column"><?php echo $package['name']; ?></td>
-                <td class="name-column"><?php echo $package['price']; ?></td>
-                <td class="name-column"><?php echo $package['description']; ?></td>
-            </tr>
-            <?php $counter++; ?>
-        <?php endforeach;?>
-    </tbody>
-</table>
+                <thead>
+                    <tr>
+                        <th scope="col">#</th>
+                        <th scope="col">Name</th>
+                        <th scope="col">Price</th>
+                        <th scope="col">Description</th>
+                        <th></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <?php $counter = 1; ?>
+                    <?php foreach ($packages as $package): ?>
+                        <tr>
+                            <th scope="row"><?php echo $counter; ?></th>
+                            <td class="name-column"><?php echo $package['name']; ?></td>
+                            <td class="name-column"><?php echo $package['price']; ?></td>
+                            <td class="name-column"><?php echo $package['description']; ?></td>
+                            <td>
+                                <div class="dropdown">
+                                    <button class="btn btn-primary btn-sm dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        Options
+                                    </button>
+                                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">                                        
+                                        <a class="dropdown-item" href="#" data-toggle="modal" data-target="#confirmDeleteModal_<?php echo($package['id']) ?>">Delete Package</a>
+                                        <a class="dropdown-item" href="#" data-toggle="modal" data-target="#editServiceModal_<?php ?>">Edit Service</a>
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>
+                         <!-- Delete Package Confirmation Modal -->
+                        <div class="modal fade" id="confirmDeleteModal_<?php  echo($package['id']) ?>" tabindex="-1" role="dialog" aria-labelledby="confirmDeleteModalLabel" aria-hidden="true">
+                            <div class="modal-dialog" role="document">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title" id="confirmDeleteModalLabel">Confirm Delete</h5>
+                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                            <span aria-hidden="true">&times;</span>
+                                        </button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <p>Are you sure you want to delete this package?</p>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
+                                        <a href="<?=site_url('delete-package/' . $package['id']); ?>" class="btn btn-danger">Delete</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- End Delete Package Confirmation Modal -->
+                        <?php $counter++; ?>
+                    <?php endforeach;?>
+                </tbody>
+            </table>
 
 
             </div>

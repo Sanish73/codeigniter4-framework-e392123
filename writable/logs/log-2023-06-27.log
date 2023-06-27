@@ -147,3 +147,151 @@ in SYSTEMPATH\Database\BaseResult.php on line 104.
  5 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
  6 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
  7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-27 04:32:50 --> Undefined array key "price"
+in APPPATH\Views\welcome_message.php on line 175.
+ 1 APPPATH\Views\welcome_message.php(175): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "price"', 'C:\\xamp1\\htdocs\\codeigniter4-framework-e392123\\app\\Views\\welcome_message.php', 175)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xamp1\\htdocs\\codeigniter4-framework-e392123\\app\\Views\\welcome_message.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('welcome_message', [], true)
+ 5 APPPATH\Controllers\Home.php(21): view('welcome_message', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Home->index()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-27 04:37:43 --> Undefined array key "contact"
+in APPPATH\Views\welcome_message.php on line 175.
+ 1 APPPATH\Views\welcome_message.php(175): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "contact"', 'C:\\xamp1\\htdocs\\codeigniter4-framework-e392123\\app\\Views\\welcome_message.php', 175)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xamp1\\htdocs\\codeigniter4-framework-e392123\\app\\Views\\welcome_message.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('welcome_message', [], true)
+ 5 APPPATH\Controllers\Home.php(21): view('welcome_message', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Home->index()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-27 05:26:33 --> Call to undefined function App\Controllers\getPost()
+in APPPATH\Controllers\Home.php on line 80.
+ 1 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Home->updatePackages('25')
+ 2 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 3 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-27 05:29:19 --> Call to undefined method CodeIgniter\Database\MySQLi\Connection::where()
+in APPPATH\Models\PackagesModel.php on line 27.
+ 1 APPPATH\Controllers\Home.php(86): App\Models\PackagesModel->updatePackage('25', [...])
+ 2 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Home->updatePackages('25')
+ 3 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-27 05:30:39 --> Call to undefined method CodeIgniter\Database\MySQLi\Connection::update()
+in APPPATH\Models\PackagesModel.php on line 28.
+ 1 APPPATH\Controllers\Home.php(86): App\Models\PackagesModel->updatePackage('25', [...])
+ 2 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Home->updatePackages('25')
+ 3 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-27 05:34:17 --> Call to undefined method CodeIgniter\Database\MySQLi\Connection::where()
+in APPPATH\Models\PackagesModel.php on line 27.
+ 1 APPPATH\Controllers\Home.php(86): App\Models\PackagesModel->updatePackage('25', [...])
+ 2 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Home->updatePackages('25')
+ 3 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-27 05:35:30 --> Undefined variable $serviceId
+in APPPATH\Models\PackagesModel.php on line 28.
+ 1 APPPATH\Models\PackagesModel.php(28): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $serviceId', 'C:\\xamp1\\htdocs\\codeigniter4-framework-e392123\\app\\Models\\PackagesModel.php', 28)
+ 2 APPPATH\Controllers\Home.php(86): App\Models\PackagesModel->updatePackage('25', [...])
+ 3 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Home->updatePackages('25')
+ 4 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 5 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-06-27 05:36:01 --> mysqli_sql_exception: Unknown column 'contact' in 'field list' in C:\xamp1\htdocs\codeigniter4-framework-e392123\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xamp1\htdocs\codeigniter4-framework-e392123\system\Database\MySQLi\Connection.php(295): mysqli->query('UPDATE `package...', 0)
+#1 C:\xamp1\htdocs\codeigniter4-framework-e392123\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `package...')
+#2 C:\xamp1\htdocs\codeigniter4-framework-e392123\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `package...')
+#3 C:\xamp1\htdocs\codeigniter4-framework-e392123\system\Database\BaseBuilder.php(2476): CodeIgniter\Database\BaseConnection->query('UPDATE `package...', Array, false)
+#4 C:\xamp1\htdocs\codeigniter4-framework-e392123\app\Models\PackagesModel.php(29): CodeIgniter\Database\BaseBuilder->update(Array)
+#5 C:\xamp1\htdocs\codeigniter4-framework-e392123\app\Controllers\Home.php(86): App\Models\PackagesModel->updatePackage('25', Array)
+#6 C:\xamp1\htdocs\codeigniter4-framework-e392123\system\CodeIgniter.php(932): App\Controllers\Home->updatePackages('25')
+#7 C:\xamp1\htdocs\codeigniter4-framework-e392123\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#8 C:\xamp1\htdocs\codeigniter4-framework-e392123\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xamp1\htdocs\codeigniter4-framework-e392123\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-06-27 05:36:01 --> Unknown column 'contact' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('UPDATE `packages` SET `name` = \'naskdj\', `contact` = \'jashjdkh\', `description` = \'sanish\\r\\n\'
+WHERE `service_id` = \'25\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `packages` SET `name` = \'naskdj\', `contact` = \'jashjdkh\', `description` = \'sanish\\r\\n\'
+WHERE `service_id` = \'25\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `packages` SET `name` = \'naskdj\', `contact` = \'jashjdkh\', `description` = \'sanish\\r\\n\'
+WHERE `service_id` = \'25\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2476): CodeIgniter\Database\BaseConnection->query('UPDATE `packages` SET `name` = :name:, `contact` = :contact:, `description` = :description:
+WHERE `service_id` = :service_id:', [...], false)
+ 5 APPPATH\Models\PackagesModel.php(29): CodeIgniter\Database\BaseBuilder->update([...])
+ 6 APPPATH\Controllers\Home.php(86): App\Models\PackagesModel->updatePackage('25', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Home->updatePackages('25')
+ 8 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 9 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-06-27 05:42:50 --> mysqli_sql_exception: Unknown column 'location' in 'field list' in C:\xamp1\htdocs\codeigniter4-framework-e392123\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xamp1\htdocs\codeigniter4-framework-e392123\system\Database\MySQLi\Connection.php(295): mysqli->query('UPDATE `package...', 0)
+#1 C:\xamp1\htdocs\codeigniter4-framework-e392123\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `package...')
+#2 C:\xamp1\htdocs\codeigniter4-framework-e392123\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `package...')
+#3 C:\xamp1\htdocs\codeigniter4-framework-e392123\system\Database\BaseBuilder.php(2476): CodeIgniter\Database\BaseConnection->query('UPDATE `package...', Array, false)
+#4 C:\xamp1\htdocs\codeigniter4-framework-e392123\app\Models\PackagesModel.php(29): CodeIgniter\Database\BaseBuilder->update(Array)
+#5 C:\xamp1\htdocs\codeigniter4-framework-e392123\app\Controllers\Home.php(87): App\Models\PackagesModel->updatePackage('25', Array)
+#6 C:\xamp1\htdocs\codeigniter4-framework-e392123\system\CodeIgniter.php(932): App\Controllers\Home->updatePackages('25')
+#7 C:\xamp1\htdocs\codeigniter4-framework-e392123\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#8 C:\xamp1\htdocs\codeigniter4-framework-e392123\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xamp1\htdocs\codeigniter4-framework-e392123\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-06-27 05:42:50 --> Unknown column 'location' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('UPDATE `packages` SET `name` = \'sanish\', `location` = \'kdjahskd\', `contact` = \'jashjdkh\', `description` = \'aksd\'
+WHERE `service_id` = \'25\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `packages` SET `name` = \'sanish\', `location` = \'kdjahskd\', `contact` = \'jashjdkh\', `description` = \'aksd\'
+WHERE `service_id` = \'25\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `packages` SET `name` = \'sanish\', `location` = \'kdjahskd\', `contact` = \'jashjdkh\', `description` = \'aksd\'
+WHERE `service_id` = \'25\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2476): CodeIgniter\Database\BaseConnection->query('UPDATE `packages` SET `name` = :name:, `location` = :location:, `contact` = :contact:, `description` = :description:
+WHERE `service_id` = :service_id:', [...], false)
+ 5 APPPATH\Models\PackagesModel.php(29): CodeIgniter\Database\BaseBuilder->update([...])
+ 6 APPPATH\Controllers\Home.php(87): App\Models\PackagesModel->updatePackage('25', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Home->updatePackages('25')
+ 8 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 9 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-27 06:21:35 --> Undefined variable $row
+in APPPATH\Views\packagePage.php on line 105.
+ 1 APPPATH\Views\packagePage.php(105): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $row', 'C:\\xamp1\\htdocs\\codeigniter4-framework-e392123\\app\\Views\\packagePage.php', 105)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xamp1\\htdocs\\codeigniter4-framework-e392123\\app\\Views\\packagePage.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('packagePage', [], true)
+ 5 APPPATH\Controllers\Home.php(43): view('packagePage', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Home->pakageList('25')
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-27 06:21:52 --> Undefined variable $row
+in APPPATH\Views\packagePage.php on line 106.
+ 1 APPPATH\Views\packagePage.php(106): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $row', 'C:\\xamp1\\htdocs\\codeigniter4-framework-e392123\\app\\Views\\packagePage.php', 106)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xamp1\\htdocs\\codeigniter4-framework-e392123\\app\\Views\\packagePage.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('packagePage', [], true)
+ 5 APPPATH\Controllers\Home.php(43): view('packagePage', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Home->pakageList('25')
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-27 06:28:28 --> Undefined variable $row
+in APPPATH\Views\packagePage.php on line 126.
+ 1 APPPATH\Views\packagePage.php(126): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $row', 'C:\\xamp1\\htdocs\\codeigniter4-framework-e392123\\app\\Views\\packagePage.php', 126)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xamp1\\htdocs\\codeigniter4-framework-e392123\\app\\Views\\packagePage.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('packagePage', [], true)
+ 5 APPPATH\Controllers\Home.php(43): view('packagePage', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Home->pakageList('25')
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()

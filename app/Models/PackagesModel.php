@@ -6,7 +6,13 @@ use CodeIgniter\Model;
 
 class PackagesModel extends Model
 {
+    protected $db;
     protected $table = 'packages';
+    
+    public function __construct()
+    {
+       parent::__construct();
+    }
 
     protected $allowedFields = ['service_id', 'name', 'description', 'price', 'created_by' , 'updated_by'];
 
@@ -14,5 +20,13 @@ class PackagesModel extends Model
     {
         return $this->belongsTo('App\Models\ServiceModel', 'service_id');
     }
+
+
+    public function deletePackage($id) {
+        return $this->delete($id);
+    }
+ 
+
+    
   
 }
