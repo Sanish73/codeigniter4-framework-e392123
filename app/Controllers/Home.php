@@ -96,7 +96,7 @@ class Home extends BaseController
         
         $packageModel->deletePackage($id);
     
-        return redirect()->to(base_url('/add-package/' . $pack));
+        return redirect()->back();
     }
 
 
