@@ -2,11 +2,17 @@
 
 namespace App\Controllers;
 
+use Config\Database;
 use App\Models\PackagesModel;
 use App\Models\ServicesModel;
 
 class Home extends BaseController
 {
+
+   
+    
+
+
     public function index()
     {
         $servicesModel = new ServicesModel();
@@ -65,10 +71,12 @@ class Home extends BaseController
         return redirect()->to(base_url('/add-package/' . $pack));
 
     }
-
-    public function indexPackage()
-    {
-     
+    public function deleteServices($id)
+    {       
+    $servicesModel = new ServicesModel();
+    $servicesModel->deleteService($id);
+   
+    return redirect()->to(base_url('/'));
     }
 
 }

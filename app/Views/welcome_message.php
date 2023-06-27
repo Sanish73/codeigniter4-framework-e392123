@@ -94,39 +94,70 @@
 
             <div class="container">
                 <div style="overflow-x: auto;">
-                    <table class="table" style="width: 100%; table-layout: fixed;">
-                        <thead>
-                            <tr>
-                                <th width="5%">#</th>
-                                <th width="15%">Name</th>
-                                <th width="10%">Contact</th>
-                                <th width="15%">Location</th>
-                                <th width="35%">Description</th>
-                                <th width="10%"></th>
-                            </tr>
-                        </thead>
+                <table class="table" style="width: 100%; table-layout: fixed;">
+    <thead>
+        <tr>
+            <th width="5%">#</th>
+            <th width="15%">Name</th>
+            <th width="10%">Contact</th>
+            <th width="15%">Location</th>
+            <th width="35%">Description</th>
+            <th width="10%"></th>
+        </tr>
+    </thead>
 
-                        <tbody>
-                            <?php foreach ($data as $index => $row): ?>
-                            <tr>
-                                <th scope="row"><?php echo $index + 1; ?></th>
-                                <td class="name-column">
-                                    <?php echo $row['name']; ?>
-                                </td>
-                                <td class="contact-column"><?php echo $row['contact']; ?></td>
-                                <td class="location-column"><?php echo $row['location']; ?></td>
-                                <td class="multiline-description" style="word-wrap: break-word;">
-                                    <?php echo $row['description']; ?>
-                                </td>
-                                <td>
-                                    <a href="<?=site_url('add-package/' . $row['id'])?>" class="btn btn-primary btn-sm">ADD Packages</a>
+    <tbody>
+        <?php foreach ($data as $index => $row): ?>
+        <tr>
+            <th scope="row"><?php echo $index + 1; ?></th>
+            <td class="name-column">
+                <?php echo $row['name']; ?>
+            </td>
+            <td class="contact-column"><?php echo $row['contact']; ?></td>
+            <td class="location-column"><?php echo $row['location']; ?></td>
+            <td class="multiline-description" style="word-wrap: break-word;">
+                <?php echo $row['description']; ?>
+            </td>
+            <td>
+                <div class="dropdown">
+                    <button class="btn btn-primary btn-sm dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Options
+                    </button>
+                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                        <a class="dropdown-item" href="<?=site_url('add-package/' . $row['id'])?>">Add Package</a>
+                        <a class="dropdown-item" href="#" data-toggle="modal" data-target="#confirmDeleteModal_<?php echo $row['id']; ?>">Delete Package</a>
+                    </div>
+                </div>
+            </td>
+        </tr>
+        
+        <!-- Delete Package Confirmation Modal -->
+        <div class="modal fade" id="confirmDeleteModal_<?php echo $row['id']; ?>" tabindex="-1" role="dialog" aria-labelledby="confirmDeleteModalLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="confirmDeleteModalLabel">Confirm Delete</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <p>Are you sure you want to delete this package?</p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
+                        <a href="<?=site_url('delete-services/' . $row['id']); ?>" class="btn btn-danger">Delete</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- End Delete Package Confirmation Modal -->
+
+        <?php endforeach;?>
+    </tbody>
+</table>
 
 
-                                </td>
-                            </tr>
-                            <?php endforeach;?>
-                        </tbody>
-                    </table>
                 </div>
             </div>
 

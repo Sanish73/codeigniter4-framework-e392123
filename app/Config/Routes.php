@@ -50,6 +50,8 @@ if (is_file(APPPATH . 'Config/' . ENVIRONMENT . '/Routes.php')) {
 
 $routes->get('/', 'Home::index');
 $routes->post('/submit-service-form', 'Home::postServices');
+$routes->get('/delete-services/(:num)', 'Home::deleteServices/$1');
+
 
 
 $routes->get('/add-package/(:num)', 'Home::pakageList/$1');
