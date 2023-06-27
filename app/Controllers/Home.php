@@ -32,9 +32,8 @@ class Home extends BaseController
         ];
 
         // echo "<script>alert('Data: " . json_encode($data) . "');</script>";
-
         $servicesModel->insert($data);
-        // code to redirect to index route
+       
         return redirect()->to(base_url('/'));
     }
 
