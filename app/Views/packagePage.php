@@ -78,33 +78,29 @@
 
             <div class="container">
 
-                <table class="table">
-                    <thead>
-                        <tr>
-                            <th scope="col">#</th>
-                            <th scope="col">Name</th>
-                            <th scope="col">Price</th>
-                            <th scope="col">Description</th>
+               <table class="table">
+    <thead>
+        <tr>
+            <th scope="col">#</th>
+            <th scope="col">Name</th>
+            <th scope="col">Price</th>
+            <th scope="col">Description</th>
+        </tr>
+    </thead>
+    <tbody>
+        <?php $counter = 1; ?>
+        <?php foreach ($packages as $package): ?>
+            <tr>
+                <th scope="row"><?php echo $counter; ?></th>
+                <td class="name-column"><?php echo $package['name']; ?></td>
+                <td class="name-column"><?php echo $package['price']; ?></td>
+                <td class="name-column"><?php echo $package['description']; ?></td>
+            </tr>
+            <?php $counter++; ?>
+        <?php endforeach;?>
+    </tbody>
+</table>
 
-                        </tr>
-                    </thead>
-                    <tbody>
-                             <?php $counter = 1; ?>
-                        <?php foreach ($data['data'] as $item): ?>
-                         <tr>
-                            <th scope="row"><?php echo $counter; ?></th>
-
-                            <td class="name-column"><?php echo $item['name'] ?>
-                            <td class="name-column"><?php echo $item['price'] ?>
-                            <td class="name-column"><?php echo $item['description'] ?>
-                            
-                        </tr>
-                          
-                            <?php $counter++; ?>
-                        <?php endforeach;?>
-
-                    </tbody>
-                </table>
 
             </div>
         </div>

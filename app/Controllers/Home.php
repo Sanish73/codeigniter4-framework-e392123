@@ -39,6 +39,7 @@ class Home extends BaseController
 
     public function pakageList($id)
     {
+        $servicesModel = new ServicesModel();
         $x = new PackagesModel();
         $data['data'] = $x->findAll();
 
@@ -46,7 +47,8 @@ class Home extends BaseController
 
         return view('packagePage',[
             'id' => $id,
-            'data' =>$data
+            'data' =>$data,
+            'packages' => $servicesModel->getPackagesByServiceId($id)
         ]);
     }
 
