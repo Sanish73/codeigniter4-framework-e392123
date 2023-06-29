@@ -156,7 +156,7 @@
 
         <!--Edit Pacage -->
     <div class="modal fade" id="editServiceModal_<?php echo $row['id']; ?>" tabindex="-1" role="dialog" aria-labelledby="editServiceModalLabel_<?php echo $row['id']; ?>" aria-hidden="true">
-    <div class="modal-dialog" role="document">
+     <div class="modal-dialog" role="document">
         <div class="modal-content">
             <div class="modal-header">
                 <h5 class="modal-title" id="editServiceModalLabel_<?php echo $row['id']; ?>">Edit Package</h5>

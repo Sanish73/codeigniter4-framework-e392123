@@ -1,0 +1,11 @@
+CRITICAL - 2023-06-29 01:07:09 --> Undefined array key "Price"
+in APPPATH\Views\packagePage.php on line 173.
+ 1 APPPATH\Views\packagePage.php(173): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "Price"', 'C:\\xamp1\\htdocs\\codeigniter4-framework-e392123\\app\\Views\\packagePage.php', 173)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xamp1\\htdocs\\codeigniter4-framework-e392123\\app\\Views\\packagePage.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('packagePage', [], true)
+ 5 APPPATH\Controllers\Home.php(43): view('packagePage', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Home->pakageList('25')
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
