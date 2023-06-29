@@ -58,5 +58,7 @@ $routes->post('/update-services/(:num)', 'Home::updateService/$1');
 $routes->get('/add-package/(:num)', 'Home::pakageList/$1');
 $routes->post('/submit-package-form', 'Home::postPackages');
 $routes->get('/delete-package/(:num)', 'Home::deletePackages/$1');
+$routes->post('/update-package/(:num)', 'Home::updatePackages/$1');
+
 
 

@@ -99,6 +99,22 @@ class Home extends BaseController
         return redirect()->back();
     }
 
+    public function updatePackages($id)
+    
+    {       
+        $packageModel = new PackagesModel();
+      
+        $data = [            
+            'name' => $this->request->getPost('packageName'),
+            'price' => $this->request->getPost('packagePrice'),
+            'description' => $this->request->getPost('packageDescription'),
+        ];
+        $packageModel->updatePackage($id, $data);   
+    
+        return redirect()->back();
+    }
+
+
 
     
 }

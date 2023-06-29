@@ -25,6 +25,15 @@ class PackagesModel extends Model
     public function deletePackage($id) {
         return $this->delete($id);
     }
+
+    public function updatePackage($id , $data) {
+        $this->db->table('packages')
+        ->where('id', $id)
+        ->update($data);
+    }
+
+
+    
  
 
     

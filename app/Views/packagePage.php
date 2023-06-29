@@ -163,7 +163,7 @@
                                         </button>
                                     </div>
                                     <div class="modal-body">
-                                        <form method="post" action="<?=site_url('update-services/' . $package['id'])?>">
+                                        <form method="post" action="<?=site_url('update-package/' . $package['id'])?>">
                                             <div class="form-group">
                                                 <label for="packageName_<?php echo($package['id']) ?>">Name</label>
                                                 <input type="text" class="form-control" id="packageName_<?php echo($package['id']) ?>" name="packageName" value="<?php echo $package['name']; ?>" required>
